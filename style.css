@@ -21,7 +21,7 @@ header{
 }
 
 a{
-    text-decoration: none;
+    text-decoration: none!important;
     color: inherit;
 }
 
@@ -93,9 +93,10 @@ a{
 .bottom-nav > .inner > div > a.disabled{
     color: #3c3c3c;
     cursor: default;
+    
 }
 
-.bottom-nav > .inner > div > a:hover{
+.bottom-nav > .inner > div > a:not(.disabled):hover{
     color: white;
 }
 
