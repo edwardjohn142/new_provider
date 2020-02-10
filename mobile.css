@@ -1,0 +1,125 @@
+@media screen and (max-width: 1000px){
+    
+    .bottom-nav > .inner > div > a > span{
+        display: none;
+    }
+
+    .bottom-nav > .inner > div > a{
+        margin-right: 0;
+    }
+
+    .bottom-nav, .icon-category{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: scroll;
+    }
+
+    .icon-category::-webkit-scrollbar ,
+        .bottom-nav::-webkit-scrollbar {
+        display: none;
+      }
+      
+      /* Hide scrollbar for IE and Edge */
+      .bottom-nav,.icon-category {
+        -ms-overflow-style: none;
+      }
+
+      .bottom-nav > .inner > div > a:not(:last-child){
+          margin-right: 0;
+      }
+
+      .top .inner > div {
+        text-align: center;
+    }
+
+    .bottom-nav > .inner > div > a{
+        color: #969696;
+        box-sizing: content-box;
+        /* float: left; */
+        position: relative;
+        padding: 0px 25px;
+    }
+
+    .bottom-nav > .inner > div > a:first-child:before{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        left: -2px;
+        top: 0px;
+        background-color: #0f0f0f;
+    }
+
+    .bottom-nav > .inner > div > a:last-child:after{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        right: -2px;
+        top: 0px;
+        background-color: #323232;
+    }
+
+    .bottom-nav > .inner > div > a{
+        border-left: 1px solid #323232;
+        border-right: 1px solid #0f0f0f;
+    }
+
+    .bottom-nav > .inner > div{
+        display: flex;
+        margin: 0 auto;
+    }
+
+
+    .bottom-nav > .inner > div > a.active, 
+    .bottom-nav > .inner > div > a:not(.disabled):hover{
+        background-color: transparent;
+        color: white;
+
+    }
+
+    .logo.mobile{
+        display: initial;
+        margin-left: 10px;
+    }
+
+    .logo.mobile > img{
+        height: 32px;
+    }
+
+    .logo.web{
+        display: none;
+    }
+    .table a{
+        float: none!important;
+        margin-bottom: 0!important;
+    }
+
+    .footer .right{
+        display: none;
+    }
+
+    .footer .left{
+        max-width: 100%;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .footer p {
+        padding: 0 10px;
+    }
+
+    .footer p > br{
+       display: none;
+    }
+
+    .icon-category a span.icon{
+        margin-bottom: 5px;
+    }
+
+    .icon-category a{
+        margin-right: 0!important;
+        padding: 10px 34px;
+    }
+    
+}
