@@ -70,7 +70,10 @@
         margin: 0 auto;
     }
 
-
+    .sticky-bottom{
+        position: sticky;
+        top: 100%;
+    }
     .bottom-nav > .inner > div > a.active, 
     .bottom-nav > .inner > div > a:not(.disabled):hover{
         background-color: transparent;
