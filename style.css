@@ -99,6 +99,14 @@ a{
     height: 270px;
     width: 100%;
     background-color: black;
+    position: relative;
+}
+
+.banner > img{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
 }
 
 .icon-category{
