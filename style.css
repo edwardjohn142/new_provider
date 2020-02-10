@@ -275,16 +275,28 @@ a{
     text-align: center;
 }
 
+.icon-category a{
+    display: inline-block;
+    padding: 20px 0;
+    cursor: default;
+}
+
 .icon-category a span.icon{
     width: 54px;
+   
     display: inline-block;
     margin-bottom: 15px;
     height: 46px;
+    background-image: url(./Web/icons/GameIcon_Web_Baccarat_Disable.png);
+}
+
+.icon-category a.tab-active span.icon{
     background-image: url(./Web/icons/GameIcon_Web_Baccarat_Off.png);
 }
 
 
-.icon-category a:hover span.icon{
+
+.icon-category a.tab-active:not(.active):hover span.icon{
     background-image: url(./Web/icons/GameIcon_Web_Baccarat_On.png);
 }
 
@@ -300,15 +312,22 @@ a{
     display: block;
 }
 
-.icon-category a:hover span.text{
+.icon-category a.tab-active{
+    cursor: pointer;
+    color: white;
+}
+
+.icon-category a.tab-active:not(.active) span.text{
     color: #969696;
 }
 
-
-.icon-category a{
-    display: inline-block;
-    padding: 20px 0;
+.icon-category a.tab-active:not(.active):hover span.text{
+    color: white;
 }
+
+
+
+
 
 .icon-category a:not(:last-child){
     margin-right: 150px;
